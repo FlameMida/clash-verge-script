@@ -199,7 +199,7 @@ const rules = [
   "RULE-SET,direct,全局直连",
   "RULE-SET,lancidr,全局直连,no-resolve",
   "RULE-SET,cncidr,全局直连,no-resolve",
-  "RULE-SET,telegramcidr,电报消息,no-resolve",
+  "RULE-SET,telegramcidr,电报,no-resolve",
   // 其他规则
   "GEOSITE,CN,全局直连",
   "GEOIP,LAN,全局直连,no-resolve",
@@ -367,5 +367,6 @@ function main(config) {
   return config;
 
 }
+
 
 
