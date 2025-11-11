@@ -135,12 +135,6 @@ const ruleProviders = {
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt",
     "path": "./ruleset/loyalsoldier/applications.yaml"
   },
-  "bahamut": {
-    ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/Bahamut.txt",
-    "path": "./ruleset/xiaolin-007/bahamut.yaml"
-  },
   "YouTube": {
     ...ruleProviderCommon,
     "behavior": "classical",
@@ -194,7 +188,6 @@ const rules = [
   "RULE-SET,apple,苹果服务",
   "RULE-SET,YouTube,YouTube",
   "RULE-SET,Netflix,Netflix",
-  "RULE-SET,bahamut,动画疯",
   "RULE-SET,Spotify,Spotify",
   "RULE-SET,BilibiliHMT,哔哩哔哩港澳台",
   "RULE-SET,AI,AI",
@@ -271,7 +264,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "电报消息",
+      "name": "电报",
       "type": "select",
       "proxies": ["节点选择","全局直连"],
       "include-all": true,
@@ -308,15 +301,6 @@ function main(config) {
       "proxies": ["节点选择","全局直连"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
-    },
-    {
-      ...groupBaseOption,
-      "name": "动画疯",
-      "type": "select",
-      "proxies": ["节点选择"],
-      "include-all": true,
-      "filter": "(?i)台|tw|TW",
-      "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/Bahamut.svg"
     },
     {
       ...groupBaseOption,
@@ -383,4 +367,5 @@ function main(config) {
   return config;
 
 }
+
 
