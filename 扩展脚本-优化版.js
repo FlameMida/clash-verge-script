@@ -160,10 +160,10 @@ const ruleProviders = {
     "path": "./ruleset/xiaolin-007/BilibiliHMT.yaml"    
   },
   "AI": {
-    ...ruleProviderCommon,
+    "type": "http",
+    "format": "text",
     "behavior": "classical",
-    "url": "https://ruleset.skk.moe/Clash/non_ip/ai.txt",
-    "path": "./ruleset/xiaolin-007/AI.yaml"    
+    "url": "https://ruleset.skk.moe/Clash/non_ip/ai.txt" 
   },
   "TikTok": {
     ...ruleProviderCommon,
@@ -367,6 +367,7 @@ function main(config) {
   return config;
 
 }
+
 
 
 
