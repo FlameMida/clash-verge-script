@@ -162,7 +162,7 @@ const ruleProviders = {
   "AI": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/AI.txt",
+    "url": "https://ruleset.skk.moe/Clash/non_ip/ai.txt",
     "path": "./ruleset/xiaolin-007/AI.yaml"    
   },
   "TikTok": {
@@ -367,6 +367,7 @@ function main(config) {
   return config;
 
 }
+
 
 
 
